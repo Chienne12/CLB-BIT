@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Lạc Bộ BIT - Trang Chủ (V1.4 - Hero Slider)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+
+    <!-- Header Section (Giống V1.3) -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="club-identity">
+                <img src="Image/BIT.jpg" alt="Logo CLB BIT" class="club-logo">
+                <div class="club-name">
+                    <h1>BTEC</h1>
+                    <p>BTEC Information Technology</p>
+                </div>
+            </div>
+            <div class="partner-logos">
+                <img src="Image/BTEC.jpg" alt="Partner Logo 1" class="partner-logo">
+                <img src="Image/Co_anh.jpg" alt="Partner Logo 2" class="partner-logo">
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar (Giống V1.3) -->
+    <nav class="navbar">
+        <div class="container">
+            <ul id="primary-navigation" class="nav-links" data-visible="false">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">Tin Tức</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact-section">Liên Hệ</a></li>
+                <li><a href="#login" class="login-btn">Đăng Nhập</a></li>
+                <li class="search-item">
+                    <input type="search" placeholder="Tìm kiếm...">
+                    <button type="submit" class="search-btn">Tìm</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (ĐÃ CẬP NHẬT CHO V1.4) -->
+    <section id="home" class="hero-section">
+        <!-- Lớp chứa các slide ảnh -->
+        <div class="hero-slider-container">
+            <!-- Các slide ảnh -->
+            <!-- Bạn cần tạo các ảnh này và đặt trong thư mục /images -->
+            <div class="hero-slide active" style="background-image: url('Image/Ảnh 1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Image/Ảnh 2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Image/anh 4.jpg');"></div>
+            <!-- Thêm các slide khác nếu muốn -->
+        </div>
+
+        <!-- Nội dung hero vẫn nằm trên các slide -->
+        <div class="container hero-content">
+            <h2>Chào mừng đến với CLB BIT</h2>
+            <p>Nơi kết nối đam mê và chia sẻ kiến thức công nghệ.</p>
+            <a href="#about" class="btn btn-primary">Tìm hiểu thêm</a>
+        </div>
+    </section>
+
+    <!-- Main Content Area (Giống V1.3) -->
+    <main class="main-area container">
+        <div class="page-title-section">
+            <h3>Sự Kiện</h3>
+        </div>
+
+        <div class="dynamic-content-layout">
+            <!-- Left Navigation Area (Giống V1.3) -->
+            <aside class="left-navigation-area">
+                <div class="nav-box">
+                    <h4>Chuyên Mục</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=61550777080606&locale=vi_VN">Tin Tức CLB</a></li>
+                        <li><a href="https://www.facebook.com/share/p/1ASNz5z5hc/">Sự Kiện Sắp Tới</a></li>
+                        <li><a href="https://www.facebook.com/share/v/1BsH7giHTC/">Bài Viết Kỹ Thuật</a></li>
+                        <li><a href="https://www.facebook.com/share/v/1BsH7giHTC/">Hướng Dẫn</a></li>
+                    </ul>
+                </div>
+                <div class="nav-box">
+                    <h4>Mục Khác</h4>
+                    <ul>
+                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOEdoSWLtx_rHANHYolrWTY4UuwffN61qkFPW8JWCFIH5TrA/viewform?usp=sharing">Đăng Ký Thành Viên</a></li>
+                        <li><a href="https://discord.gg/zZprE3nE">Diễn Đàn CLB</a></li>
+                        <li><a href="https://www.udemy.com/">Thư Viện Tài Liệu</a></li>
+                        <li><a href="#" id="openEventPopupLink">Sự Kiện Nổi Bật (Mở Popup)</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+           <!-- Center Content Area -->
+            <section class="center-content-area">
+                <!-- HỘP NỘI DUNG ĐẦU TIÊN ĐÃ CẬP NHẬT CHO V1.5 -->
+                <article class="content-box">
+                    <h4>Sự kiện nổi bật</h4>
+                    <p>Dưới đây là danh sách các sự kiện hàng đầu được mong đợi nhất của CLB trong thời gian tới:</p>
+                    <ul class="top-event-list">
+                        <li><a href="#event-link-1">Workshop Lập Trình Web Nâng Cao - Tháng 10/2025</a></li>
+                        <li><a href="#event-link-2">Cuộc Thi Sáng Tạo Robot BIT Challenge - Tháng 11/2025</a></li>
+                        <li><a href="#event-link-3">Talkshow: AI và Tương Lai Nghề Nghiệp - 05/12/2025</a></li>
+                        <li><a href="#event-link-4">Khóa Học An Ninh Mạng Cơ Bản - Khai giảng 10/12/2025</a></li>
+                        <li><a href="#event-link-5">Gala Tổng Kết Năm & Vinh Danh Thành Viên - 25/12/2025</a></li>
+                    </ul>
+                </article>
+                <article class="content-box">
+                    <h4>Hoạt Động và Thư Viện Ảnh</h4>
+                    <p>Chúng tôi thường xuyên tổ chức các workshop, buổi nói chuyện chuyên đề, và các cuộc thi học thuật. Dưới đây là một vài hình ảnh từ các sự kiện gần đây của CLB.</p>
+                    <h5>Hình Ảnh Hoạt Động</h5>
+                    <div class="gallery">
+                        <img src="Image/6.jpg" alt="Hoạt động 1">
+                        <img src="Image/7.jpg" alt="Hoạt động 2">
+                        <img src="Image/8.jpg" alt="Hoạt động 3">
+                        <img src="Image/9.jpg" alt="Hoạt động 4 (placeholder)">
+                        <img src="Image/11.jpg" alt="Hoạt động 5 (placeholder)">
+                        <img src="Image/anh 4.jpg" alt="Hoạt động 6 (placeholder)">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Right Banner Area (Giống V1.3) -->
+            <aside class="right-banner-area">
+                <div class="banner-box">
+                    <h4>Thông Báo & Đối Tác</h4>
+                    <img src="Image/anh toa nha fpt.jpg" alt="Loading">
+                    <p>Không gian dành cho các thông báo quan trọng, hoặc banner từ các đối tác và nhà tài trợ của CLB.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Contact Form Section (Giống V1.3) -->
+    <section id="contact-section" class="contact-form-section">
+        <div class="container">
+            <h3>Liên Hệ Với Chúng Tôi</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Chủ đề:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (Giống V1.3) -->
+    <footer class="site-footer-bottom">
+        <div class="container">
+            © 2025 Câu Lạc Bộ BIT. Phát triển bởi team Newbie.</p>
+            <p>Địa chỉ: 13 Trinh Van Bo, Phuong Canh, Nam Tu Liem, Hanoi, Vietnam</p>
+            <p>Email: bit.btecfpt@gmail.com
+
+        </div>
+    </footer>
+
+    <!-- Event Popup Modal (Giống V1.3) -->
+    <div id="eventPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <button class="popup-close-btn" aria-label="Đóng popup">&times;</button>
+            <div class="popup-header">
+                <img src="Image/BTEC.jpg" alt="Logo CLB" class="popup-logo">
+                <h3>Chi Tiết Sự Kiện</h3>
+            </div>
+            <div class="popup-body">
+                <img src="Image/14.jpg" alt="Hình ảnh sự kiện" class="popup-event-image">
+                <h4>Hội Thảo Công Nghệ Blockchain 2025</h4>
+                <p class="popup-event-date"><strong>Ngày:</strong> 30/12/2025 - <strong>Thời gian:</strong> 09:00 - 17:00</p>
+                <p class="popup-event-location"><strong>Địa điểm:</strong> Hội trường A, Đại học </p>
+                <p>Tham gia hội thảo chuyên sâu về công nghệ Blockchain, khám phá các ứng dụng thực tiễn và xu hướng tương lai. Gặp gỡ các chuyên gia hàng đầu và mở rộng mạng lưới kết nối.</p>
+                <ul>
+                    <li>Bài trình bày từ các chuyên gia đầu ngành.</li>
+                    <li>Phiên thảo luận và Q&A.</li>
+                    <li>Cơ hội networking.</li>
+                </ul>
+            </div>
+            <div class="popup-footer">
+                <button href= "https://forms.gle/fU6Z3UDwRX6P86hf8" class="btn btn-primary">Đăng Ký Ngay</button>
+                <button class="btn btn-secondary popup-close-secondary-btn">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
