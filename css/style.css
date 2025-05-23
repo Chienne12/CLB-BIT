@@ -194,20 +194,19 @@ a:hover {
 /* ------------------- */
 /* Thanh Điều Hướng (Navigation Bar) */
 /* ------------------- */
-.navbar {
-    background-color: var(--nav-primary-color); /* Màu nền Navbar mới */
-    padding: 10px 0;
-    box-shadow: var(--shadow-sm);
+.nav-links a {
+    color: var(--v12-navbar-link); /* V1.2: New link color */
+    font-weight: bold;
+    padding: 8px 0;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-links li {
-    margin: 0 15px;
+.nav-links a:hover,
+.nav-links a.active-nav-link,
+.nav-links a.active {
+    color: var(--v12-navbar-link-hover); /* V1.2: New hover/active color */
+    border-bottom: 2px solid var(--v12-navbar-link-hover);
 }
 
 .nav-links a {
