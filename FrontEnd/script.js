@@ -507,7 +507,7 @@ async function sendMessageToBackend(message) {
   const loadingMsgId = addLoadingMessage();
   
   try {
-    const response = await fetch('https://f6d66e93d5a3.ngrok-free.app/chat', {
+    const response = await fetch('http://localhost:5000/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
